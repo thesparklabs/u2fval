@@ -27,7 +27,6 @@
 
 from __future__ import absolute_import
 
-
 from setuptools import setup as _setup, find_packages, Command
 from setuptools.command.sdist import sdist
 from distutils import log
@@ -138,6 +137,7 @@ class release(Command):
             raise DistutilsSetupError('Git has uncommitted changes!')
 
     def _sign(self):
+        'Programming Language :: Python :: 3',
         if os.path.isfile('dist/%s.tar.gz.asc' % self.fullname):
             # Signature exists from upload, re-use it:
             sign_opts = ['--output dist/%s.tar.gz.sig' % self.fullname,

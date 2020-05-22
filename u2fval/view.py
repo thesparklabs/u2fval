@@ -4,7 +4,7 @@ from . import app, exc
 from .model import db, Client, User
 from .transactiondb import DBStore
 from flask import g, request, jsonify
-from werkzeug.contrib.cache import SimpleCache, MemcachedCache
+from cachelib import SimpleCache, MemcachedCache
 from u2flib_server.utils import websafe_decode
 from u2flib_server.u2f import (begin_registration, complete_registration,
                                begin_authentication, complete_authentication)

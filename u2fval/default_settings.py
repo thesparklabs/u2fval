@@ -1,8 +1,8 @@
 # U2FVAL settings file
 
 # For testing/debugging only, set to False in production!
-DEBUG = True
-TESTING = True
+DEBUG = False
+TESTING = False
 
 # Set to False to disable pretty-printing of JSON responses.
 # Note: XMLHttpRequests are never pretty-printed.

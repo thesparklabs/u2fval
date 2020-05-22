@@ -11,11 +11,7 @@ u2flib-server is installable by one of three means
 
 ==== Installation via `pip` ====
 
-Run
-
-  pip install u2fval
-
-Alternatively, you can run:
+Install from this repo's Releases with:
 
   pip install u2fval-<version>.tar.gz
 

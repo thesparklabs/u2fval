@@ -28,8 +28,7 @@
 from flask import Flask
 import os
 
-__version__ = '2.0.1-dev0'
-
+__version__ = '2.0.2'
 
 app = Flask(__name__)
 app.config.from_object('u2fval.default_settings')
