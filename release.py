@@ -137,7 +137,6 @@ class release(Command):
             raise DistutilsSetupError('Git has uncommitted changes!')
 
     def _sign(self):
-        'Programming Language :: Python :: 3',
         if os.path.isfile('dist/%s.tar.gz.asc' % self.fullname):
             # Signature exists from upload, re-use it:
             sign_opts = ['--output dist/%s.tar.gz.sig' % self.fullname,
